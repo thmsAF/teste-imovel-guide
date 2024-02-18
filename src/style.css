@@ -1,5 +1,58 @@
-:root{
+:root {
     --bs-primary-rgb: 254, 102, 19;
-    --bs-secondary-rgb:27, 38, 83;
+    --bs-secondary-rgb: 27, 38, 83;
     --bs-font-sans-serif: "Roboto", sans-serif;
+    --primary-color: #ff6347;
+    --primary-color-hover: #ff4433;
+    --primary-color-active: #e62e00; /* Cor primária personalizada quando está ativo (clicado) */
 }
+
+/* Botão primário */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+}
+
+.btn-primary:active {
+    background-color: var(--primary-color-active) !important;
+    border-color: var(--primary-color-active) !important;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.zoom {
+    overflow: hidden;
+    width: max-content;
+    height:max-content;
+}
+
+.zoom img {
+    animation: zoomFadeOut 3s infinite;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@keyframes zoomFadeOut {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
