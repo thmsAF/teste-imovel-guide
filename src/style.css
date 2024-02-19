@@ -38,9 +38,9 @@
 }
 
 .zoom img {
-    animation: zoomFadeOut 30s infinite;
-    max-width: 100%;
-    max-height: 100%;
+    animation: zoomFadeOut 3s infinite;
+    max-width: 80%;
+    max-height:80%;
 }
 
 @keyframes zoomFadeOut {
@@ -59,8 +59,8 @@
 }
 .txt-Corretor{
     margin-top: 45px;
-
 }
+
 
 
 
