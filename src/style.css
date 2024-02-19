@@ -38,7 +38,7 @@
 }
 
 .zoom img {
-    animation: zoomFadeOut 3s infinite;
+    animation: zoomFadeOut 30s infinite;
     max-width: 100%;
     max-height: 100%;
 }
@@ -51,26 +51,16 @@
         transform: scale(1);
     }
 }
-
-.corretores-img{
-    width: 200px;
-    height: 300px;
-    left:15%;
-    position: absolute;
-
-}
-.corretores-desfoc-img {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-}
-.card-body1 {
-    width: 350px;
-    height: 350px;
+.corretoresContainer{
     display: flex;
-    align-items: center;
+    width:200px;
+    height: 200px;
+    margin: 10px;
 }
-.imagensjuntas{
-    position: relative;
+.txt-Corretor{
+    margin-top: 45px;
+
 }
+
+
 
