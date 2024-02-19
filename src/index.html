@@ -8,7 +8,7 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
 </head>
 <body>
 <header>
@@ -60,13 +60,36 @@
 <div class="container-fluid">
     <!-- Primeira Linha -->
     <div class="row">
+
         <div class="col-md-4">
             <div class="card">
-                <div class="card-body">
-                    <!-- Conteúdo da primeira coluna da primeira linha -->
+                <div class="card-body col-md-6">
+                    <div class="card-body1">
+                        <div class="imagensjuntas">
+                            <img class="corretores-desfoc-img" src="../images/corretoraDesf.png"/>
+                            <img class="corretores-img" src="../images/corretora.png"/>
+                        </div>
+                        <div>
+                            <h2>Nome Corretora</h2>
+                            <p>3.000 pontos</p>
+                        </div>
+                    </div>
+                    <div class="card-body1">
+                        <div class="imagensjuntas">
+                            <img class="corretores-desfoc-img" src="../images/corretorDesf.png"/>
+                            <img class="corretores-img" src="../images/corretor.png"/>
+
+                        </div>
+                        <div>
+                            <h2>Nome Corretora</h2>
+                            <p>3.000 pontos</p>
+                        </div>
+                    </div>
 
                 </div>
+
             </div>
+
         </div>
 
         <div class="col-md-4">
@@ -82,9 +105,10 @@
                             <input type="text" class="form-control" id="phone" placeholder="Digite seu telefone">
                         </div>
                         <div class="form-floating">
-                            <textarea class="form-control" id="txtarea" style="height: 100px;resize: none" placeholder="Digite o Assunto"></textarea>
+                            <textarea class="form-control" id="txtarea" style="height: 100px;resize: none"
+                                      placeholder="Digite o Assunto"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem </button>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                     </form>
 
                 </div>
@@ -105,7 +129,8 @@
                         <div class="col-md-6"><label for="resultado">Resultado:</label>
                             <input type="text" id="resultado" readonly><br></div>
                     </div>
-                    <button onclick ="calcularRegraDeTres()" class="btn btn-primary">Calcular</button><br>
+                    <button onclick="calcularRegraDeTres()" class="btn btn-primary">Calcular</button>
+                    <br>
                 </div>
             </div>
         </div>
@@ -128,10 +153,10 @@
         </div>
 
         <div class="col-md-4">
-            <div class="card">
+            <div id="card5" class="card">
                 <div class="card-body">
-                    <img src="../images/casa.png" class="img-fluid" alt="Imagem"/>
-                    <button type="button" class="btn btn-primary center"> Dowload </button>
+                    <img src="../images/casa.png" class="img-fluid" alt="Imagem"/><br>
+                    <button id=downloadButton type="button" class="btn btn-primary center"> Dowload</button>
                 </div>
             </div>
         </div>
@@ -146,7 +171,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="imagemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="imagemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body center">

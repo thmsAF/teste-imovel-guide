@@ -1,5 +1,4 @@
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var cpfInput = document.getElementById('cpf');
     var phoneInput = document.getElementById('phone');
 
@@ -36,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
 function calcularRegraDeTres() {
     var campo1 = parseFloat(document.getElementById('campo1').value);
     var campo2 = parseFloat(document.getElementById('campo2').value);
@@ -49,3 +49,15 @@ function calcularRegraDeTres() {
         alert("Por favor, preencha todos os campos corretamente e certifique-se de que o campo 2 não seja 0.");
     }
 }
+
+document.getElementById("downloadButton").addEventListener("click", function() {
+    html2canvas(document.getElementById("card5")).then(function(canvas) {
+        // Crie um link para baixar a imagem
+        var link = document.createElement("a");
+        document.body.appendChild(link);
+        link.download = "imagem.png";
+        link.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        link.click();
+        document.body.removeChild(link);
+    });
+});

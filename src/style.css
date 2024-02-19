@@ -30,14 +30,11 @@
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
 
 .zoom {
     overflow: hidden;
     width: max-content;
-    height:max-content;
+    height: max-content;
 }
 
 .zoom img {
@@ -55,4 +52,25 @@
     }
 }
 
+.corretores-img{
+    width: 200px;
+    height: 300px;
+    left:15%;
+    position: absolute;
+
+}
+.corretores-desfoc-img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+.card-body1 {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+.imagensjuntas{
+    position: relative;
+}
 
